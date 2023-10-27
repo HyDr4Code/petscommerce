@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,900&display=swap');
+
+:root {
+    --negro: #000000;
+    --maroon: #3D0000;
+    --wine: #950101;
+    --red: #FF0000;
+    --white: #FFFFFF;
+    --degradado: linear-gradient(90deg, var(--red), var(--wine));
+
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+
+*::selection {
+    background: var(--white);
+    color: red;
+}
+
+html {
+    font-size: 62.4%;
+}
+
+section {
+    min-height: 50vw;
+    padding: 0 9%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 2rem;
+    color: var(--red);
+}
+
+header .logo span {
+    color: var(--wine);
+}
+
+header .navbar a {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color: var(--red);
+}
+
+header .navbar a:hover {
+    color: var(--wine);
+}
+
+header input {
+    display: none;
+}
+
+header label {
+    font-size: 2rem;
+    color: var(--wine);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../IMG/back.png) no-repeat;
+    background-size: cover;
+    padding-top: 9rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    flex-wrap: wrap;
+}
+
+.inicio .image img {
+    animation: float 2s linear infinite;
+    padding: 3rem;
+    margin: 5rem;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(-2rem);
+    }
+}
+
+.inicio .content h1 {
+    font-size: 5.5rem;
+    color: var(--black);
+    margin-right: 5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .5rem 3rem;
+    border-radius: 8rem;
+    background: var(--degradado);
+    color: var(--white);
+    font-size: 4.4rem;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .2s linear;
+    flex-wrap: wrap;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.heading {
+    text-align: center;
+    background: var(--negro);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+}
+
+.beneficios .cajacontenedora {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.beneficios .cajacontenedora .caja {
+    flex: 1 1 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1.5rem;
+    padding: 3rem 2 rem;
+    text-align: center;
+    transition: .2s linear;
+    max-width: 100%;
+}
+
+.beneficios .cajacontenedora .caja img{
+    box-shadow:0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 1rem;
+    transition: .2s linear;
+    max-width: 100%;
+    height: auto;
+}
+
+.beneficios .cajacontenedora h3{
+    margin: 4rem;
+    color: var(--wine);
+    font-size: 2rem;
+    text-transform: initial;
+    text-align: center;
+}
+
+.beneficios .cajacontenedora p{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    text-align:justify;
+    width: 500px;
+    text-transform:initial;
+    padding: 1 rem 0; 
+}
+
+#pelaje {
+    width: 500px;
+    border-radius: 1000px;
+    flex-wrap: wrap;
+}
+
+#pelaje:hover {
+    transform: scale(1.1);
+}
+
+#energia {
+    width: 500px;
+    border-radius: 1000px;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+#energia:hover {
+    transform: scale(1.1);
+}
+
+#cachorro {
+    width: 500px;
+    border-radius: 1000px;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+#cachorro:hover {
+    transform: scale(1.1);
+}
+
+.heading h3{
+    display: flex;
+    font-size: 1.4rem;
+    text-align: center;
+    justify-content: center;
+    margin-top: 6rem;
+    color: var(--red);
+    text-transform: uppercase;
+}
+
+.formulario {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+}
+
+.beneficios .heading2{
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+    margin-top: 10rem;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    color: var(--negro);
+    background: url(../IMG/back.png) no-repeat;
+    background-size: cover;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.beneficios .heading .subtitulo2{
+    max-width: 100%;
+}
+
+.beneficios .heading2 h3{
+    margin-top: 15rem;
+    font-size: 2.5rem;
+    color: var(--wine);
+    text-transform: initial;
+}
+
+.formulario .imageform{
+    flex: 1 1 30rem;
+}
+
+.formulario .imageform img{
+    width: 100%;
+    padding: 2rem;
+}
+
+.formulario form{
+    flex: 1 1 40rem;
+    padding: 6rem 9rem;
+    box-shadow: 0 .5rem 1rem rgba(217, 18, 18, 0.1);
+    border-radius: 4rem;
+    background: white;
+}
+
+.formulario .heading{
+    text-align: left;
+    padding:0;
+    padding-bottom: 2rem;
+}
+
+.formulario form .inputcaja{
+    position: relative;
+}
+
+.formulario form .inputcaja input, .formulario form .inputcaja textarea{
+    width: 100%;
+    background: none;
+    color: var(--wine);
+    margin: 1.5 rem 0;
+    padding: .5rem 0;
+    font-size: 2rem;
+    border-bottom: .1rem solid rgba(0, 0, 0, .1);
+    text-transform: none;
+}
+
+.formulario form .inputcaja textarea{
+    resize: none;
+    height: 13rem;
+}
+
+.formulario form .inputcaja label{
+    position: absolute;
+    top: 1.7rem;
+    left: 0;
+    font-size: 1.8rem;
+    color: var(--red);
+    transition: .2s linear;
+}
+
+.formulario .btn{
+    font-size: 1.7rem;
+}
+
+.somos{
+    margin-top: 15rem;
+}
+
+.somos .content4 p{
+    display: flex;
+    text-align: justify;
+    text-transform: initial;
+    margin-top: 4rem;
+    font-size: 3rem;
+    margin-bottom: 7rem;
+}
+
+.somos h1{
+    text-align: center;
+    font-size: 5rem;
+    color: var(--wine);
+
+}
+
+.somos .image4{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 7rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.somos .image4 img{
+    max-width: 100%;
+}
+
+.somos .columna{
+    align-items: center;
+    text-align: center;
+}
+
+.somos .columna .bottons a{
+    font-size: 3rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 2rem;
+    margin-bottom: 5rem;
+}
+
+.membresias{
+    margin-top: 15rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.membresias .heading2{
+    font-size: 5rem;
+    color: var(--wine);
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+}
+
+.membresias .contenedor5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 7rem;
+}
+
+.membresias .contenedor5 .caja5{
+    flex: 1 1 30rem;
+    margin: 4rem;
+    padding: 1rem;
+    background: whitesmoke;
+    box-shadow: 0 .5rem 1rem rgb(92, 92, 92);
+    border-radius: 5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.membresias .contenedor5 .caja5:nth-child(0), 
+.membresias .contenedor5 .caja5:hover{
+    border: .3rem solid var(--red);
+}
+
+.membresias .contenedor5 .caja5 .ache3{
+    color: var(--red);
+    font-size: 4rem;
+    padding-top: 1rem;
+}
+
+.membresias .contenedor5 .caja5 .beneficios5{
+    font-size: 3.5rem;
+    transform: initial;
+    color: var(--negro);
+    padding: 1rem 0;
+    text-decoration:overline;
+}
+
+.membresias .contenedor5 .caja5 .btn{
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.membresias .contenedor5 .caja5 ul{
+    padding: 1rem 0;
+    list-style: none;
+}
+
+.membresias .contenedor5 .caja5 li{
+    font-size: 2.5rem;
+    color: var(--wine);
+    padding: .5rem 0;
+}
+
+.membresias .contenedor5 .caja5 li .fa-circle-check{
+    color: green;
+}
+
+.membresias .contenedor5 .caja5 li .fa-circle-xmark{
+    color: red;
+}
+
+.membresias .cualquiera{
+    font-size: 2.5rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: var(--wine);
+}
+
+.membresias .cualquiera p{
+    text-transform: initial;
+}
+
+.contacto .contenedor7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30rem;
+}
+
+.contacto .contenedor7 .caja7{
+    background: whitesmoke;
+    margin: 1rem;
+    padding: 3rem;
+    text-align: center;
+    position: relative;
+    border-radius: 5rem;
+    box-shadow: 0 .5rem 1rem rgb(134, 131, 131);
+    flex: 1 1 30rem;
+    transition: .2s linear;
+}
+
+#ariel:hover {
+    transform: scale(1.1);
+}
+
+#nelson:hover {
+    transform: scale(1.1);
+}
+
+#jorge:hover {
+    transform: scale(1.1);
+}
+
+#franco:hover {
+    transform: scale(1.1);
+}
+
+.contacto .contenedor7 .caja7 .fa-address-card{
+    position: absolute;
+    top: 1rem;
+    right: 4rem;
+    top: 4rem;
+    font-size: 4rem;
+    color:var(--wine);
+    opacity: .3;
+}
+
+.contacto .contenedor7 .caja7 .team img{
+    object-fit: cover;
+    height: 30rem;
+    width: 30rem;
+    margin-top: 2rem;
+}
+
+.contacto .contenedor7 .caja7 .team p{
+    font-size: 2rem;
+    margin: .5rem;
+}
+
+.contacto .contenedor7 .caja7 .team .fa-github{
+    font-size: 5rem;
+    color: var(--wine);
+}
+
+.contacto .contenedor7 .caja7 .team .fa-linkedin{
+    font-size: 5rem;
+    color: var(--wine);
+}
+
+.contacto .contenedor7 .caja7 .team h3{
+    color: var(--wine);
+    font-size: 3rem;
+}
+
+.finales{
+    font-size: 3rem;
+    display: flex;
+    margin: 15rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--wine);
+    text-transform: initial;
+}
+
+
+.foot{
+    padding-top: 7rem;
+    background: url(../IMG/foot.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.foot .cajacontenedor2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foot .cajacontenedor2 .caja{
+    flex: 1 1 25rem;
+    text-align: center;
+    justify-content:center;
+    margin: 1rem;
+}
+
+.foot .cajacontenedor2 .caja h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: whitesmoke;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.foot .cajacontenedor2 .caja p{
+    font-size: 1.7rem;
+    padding: .5rem 0;
+    color: whitesmoke;
+    text-transform: initial;
+    text-align: center;
+    margin-left: 3rem;
+    display: flex;
+}
+
+.foot .cajacontenedor2 .caja a{
+    display: block;
+    font-size: 2rem;
+    padding: .5rem 0;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.foot .cajacontenedor2 .caja a:hover{
+    text-decoration: underline;
+}
+
+.foot .cajacontenedor2 .caja .info{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.foot .cajacontenedor2 .caja .info i{
+    margin: .7rem 0;
+    margin-right: 1rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.8rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+}
+
+.foot .credit{
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color: whitesmoke;
+    border-top: .1rem solid whitesmoke;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    text-transform:initial;
+}
+
+.whatsapp{
+    position: absolute;
+    font-size: 6rem;
+    align-items:end;
+    justify-content: end;
+    text-align: end;
+    color: rgb(38, 215, 38);
+    right: 6rem;
+    bottom: 6rem;
+}
+
+.whatsapp i{
+    position: fixed;
+    transition: .2s linear;
+}
+
+#whatsapp:hover {
+    transform: scale(1.3);
+}
+
+@media(max-width:1200px) {
+    html {
+        font-size: 55%;
+}
+
+@media(max-width:768px) {
+    header label {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 1rem 2rem;
+    border-top: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: .2s linear;
+}
+
+header .navbar a {
+    display: block;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+header input:checked~.navbar {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+header input:checked~label::before {
+    content: '\f00d';
+}
+
+.inicio {
+    flex-flow: column-reverse;
+}
+
+.inicio .image img {
+    width: 100%;
+}
+
+.inicio .content h1 {
+    font-size: 2.6rem;
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 49%;
+    }
+}
