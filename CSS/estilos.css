@@ -148,13 +148,13 @@ header label {
     padding-bottom: 20rem;
 }
 
+
 .beneficios .cajacontenedora {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .beneficios .cajacontenedora .caja {
     flex: 1 1 30rem;
     display: flex;
@@ -266,63 +266,119 @@ header label {
     font-size: 2.5rem;
     color: var(--wine);
     text-transform: initial;
-}
+} 
 
-.formulario .imageform{
-    flex: 1 1 30rem;
+.dog-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .dog-face {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #f2d6a2;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .ear-left {
+    position: absolute;
+    top: 20px;
+    left: -40px;
+    width: 100px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+  }
+  
+  .ear-right {
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    width: 100px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+    transform: rotate(45deg);
+  }
+  
+  .eye {
+    position: absolute;
+    top: 70px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .eye:nth-child(1) {
+    left: 40px;
+  }
+  
+  .eye:nth-child(2) {
+    right: 40px;
+  }
+  
+  .nose {
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+  .mouth {
+    position: absolute;
+    top: 160px;
+    left: 40px;
+    width: 120px;
+    height: 60px;
+    background-color: #f2d6a2;
+    border-radius: 50% / 0 0 100% 100%;
+  }
+  
+  .form-fields {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .formulario .imageform{
+    flex: 1 1 03rem;
 }
 
 .formulario .imageform img{
     width: 100%;
-    padding: 2rem;
-}
-
-.formulario form{
-    flex: 1 1 40rem;
-    padding: 6rem 9rem;
-    box-shadow: 0 .5rem 1rem rgba(217, 18, 18, 0.1);
-    border-radius: 4rem;
-    background: white;
-}
-
-.formulario .heading{
-    text-align: left;
-    padding:0;
-    padding-bottom: 2rem;
-}
-
-.formulario form .inputcaja{
-    position: relative;
-}
-
-.formulario form .inputcaja input, .formulario form .inputcaja textarea{
-    width: 100%;
-    background: none;
-    color: var(--wine);
-    margin: 1.5 rem 0;
-    padding: .5rem 0;
-    font-size: 2rem;
-    border-bottom: .1rem solid rgba(0, 0, 0, .1);
-    text-transform: none;
-}
-
-.formulario form .inputcaja textarea{
-    resize: none;
-    height: 13rem;
-}
-
-.formulario form .inputcaja label{
-    position: absolute;
-    top: 1.7rem;
-    left: 0;
-    font-size: 1.8rem;
-    color: var(--red);
-    transition: .2s linear;
-}
-
-.formulario .btn{
-    font-size: 1.7rem;
-}
+    padding: 2rem;   
+} 
 
 .somos{
     margin-top: 15rem;
@@ -333,7 +389,7 @@ header label {
     text-align: justify;
     text-transform: initial;
     margin-top: 4rem;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 7rem;
 }
 
