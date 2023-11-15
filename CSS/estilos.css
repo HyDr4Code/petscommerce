@@ -701,6 +701,7 @@ header label {
     html {
         font-size: 55%;
 }
+}
 
 @media(max-width:768px) {
     header label {
@@ -755,4 +756,4 @@ header input:checked~label::before {
     html {
         font-size: 49%;
     }
-}
+} 
