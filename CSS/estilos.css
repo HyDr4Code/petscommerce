@@ -712,22 +712,22 @@ header label {
 
 header .navbar {
     position: absolute;
-    top: 100%;
+    top: .1%;
     left: 0;
-    width: 100%;
+    width: 12%;
     background: white;
-    padding: 1rem 2rem;
+    padding: .1rem 2rem;
     border-top: .1rem solid rgba(0, 0, 0, .2);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .1);
     transform-origin: top;
-    transform: scaleY(0);
-    opacity: 0;
+    transform: scaleY(.6);
+    opacity: .9;
     transition: .2s linear;
 }
 
 header .navbar a {
     display: block;
-    margin: 2rem 0;
+    margin: 1rem 0;
     font-size: 2rem;
 }
 
